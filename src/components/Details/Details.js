@@ -1,18 +1,21 @@
-import Axios from "axios";
 import React, { Component } from 'react';
 import './Details.css';
 
-class App extends Component {
+class Details extends Component {
     constructor() {
         super();
-        this.state = {
-            id: '',
-            imageId: ''
-        }
+        
     }
     render() {
         return (
-            <div className="App">
+            <div className="Details">
+                <div className="nav">
+                    (Link to StartPage)
+                </div>
+                <div className="details">
+
+
+                </div>
             </div>
         );
     }
