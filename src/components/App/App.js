@@ -19,7 +19,7 @@ class App extends Component {
 
   apiGetArt = async (keyword) => {
   keyword = 'cats'
-  let results = await Axios.get("https://api.artic.edu/api/v1/artworks/search?q="+keyword)
+  let results = await Axios.get("https://api.artic.edu/api/v1/artworks/search?limit=100$q="+keyword)
   // console.log(results);
   // console.log('id is',results.data.data[0].id);
   this.setState({artList: results.data.data});
