@@ -1,4 +1,4 @@
 import './StartPage.css';
 
 
-export default StartPage;
+// export default StartPage;

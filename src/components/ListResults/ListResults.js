@@ -1,4 +1,6 @@
 import './ListResults.css';
+import React, { Component } from 'react';
+import { Route, Link, Switch, Redirect } from "react-router-dom";
 
 class ListResults extends Component {
     constructor(props) {
@@ -18,7 +20,6 @@ class ListResults extends Component {
                 </nav>
                 <div className='results'></div>
               <div>Start page</div>
-              <div>{this.apiGetArt()}</div>
             </div>
         );
     }
