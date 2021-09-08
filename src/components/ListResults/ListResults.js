@@ -1,6 +1,6 @@
 import './ListResults.css';
-import React, { Component } from 'react';
-import { Route, Link, Switch, Redirect } from "react-router-dom";
+import React, { Component, useDebugValue } from 'react';
+import { Link, } from "react-router-dom";
 
 class ListResults extends Component {
     constructor(props) {
@@ -12,14 +12,23 @@ class ListResults extends Component {
         }
     }
     render() {
+        let artList = this.props.results.map((value, index) => {
+            return (
+                <div className='artContainer' key={value.id}>
+                    <Link to={'/results/' + value.id}>
+                    <p> {value.title}   </p>
+                    </Link>
+                </div>
+            )
+        })
         console.log('in results',this.props)
         return (
             <div className="ListResults">
                 <nav>
-                    <Link to='/'>Back</Link>
+                    <Link to='/'>Home</Link>
                 </nav>
                 <div className='results'></div>
-              <div>Start page</div>
+              <div>{artList}</div>
             </div>
         );
     }
