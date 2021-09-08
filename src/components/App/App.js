@@ -39,7 +39,7 @@ class App extends Component {
               render={() =>
               <StartPage apiGetArt={this.apiGetArt}/>}
             /> */}
-            <Route path='/results'
+            <Route exact path='/results'
               render={() =>
               <ListResults results={this.state.artList} />}
             />
