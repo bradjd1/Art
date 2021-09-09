@@ -24,8 +24,9 @@ class ListResults extends Component {
         console.log('in results',this.props)
         return (
             <div className="ListResults">
-                <nav className='ListResultsNav'>
+                <nav className='nav'>
                     <Link to='/'>Home</Link>
+
                 </nav>
                 <br></br>
                 <p>Click on a title below to get details about the art and/or see a picture of it.</p>
