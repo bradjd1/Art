@@ -3,4 +3,9 @@
 }
 .nav {
   background-color: bisque;
+  text-align: center;
+  height: 40px;
+  vertical-align: middle;
+  padding-top: 15px;
+
 }

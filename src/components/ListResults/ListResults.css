@@ -6,3 +6,33 @@
 .ListResultsNav {
 text-align: center;
 }
+.ListResults .background {
+    background-image: url('../../ArtInstituteofChicago2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: .75;
+    min-height: 100%;
+    /* position: relative; */
+}
+.ListResults .background2{
+    opacity: 1;
+    font-weight: bold;
+    margin-left: 30px;
+}
+/* .ListResults .background2 h2{
+    opacity: 1;
+    font-weight: bold;
+    margin-left: 40px;
+}
+.ListResults .background div {
+    opacity: 1;
+    font-weight: bold;
+    margin-left: 20px;
+} */
+.ListResults .background .instr {
+    opacity: 1;
+    font-weight: bold;
+    text-align: center;
+}
+
