@@ -14,7 +14,7 @@ class ListResults extends Component {
     render() {
         let artList = this.props.results.map((value, index) => {
             return (
-                <div className='artContainer' key={value.id}>
+                <div className='ListContainer' key={value.id}>
                     <Link to={'/results/' + value.id}>
                     <p> {value.title}   </p>
                     </Link>
@@ -24,9 +24,12 @@ class ListResults extends Component {
         console.log('in results',this.props)
         return (
             <div className="ListResults">
-                <nav>
+                <nav className='ListResultsNav'>
                     <Link to='/'>Home</Link>
                 </nav>
+                <br></br>
+                <p>Click on a title below to get details about the art and/or see a picture of it.</p>
+                <h2>Art Title:</h2>
                 <div className='results'></div>
               <div>{artList}</div>
             </div>

@@ -18,8 +18,7 @@ class App extends Component {
   }
 
   apiGetArt = async (keyword) => {
-  
-  let results = await Axios.get("https://api.artic.edu/api/v1/artworks/search?q="+keyword)
+  let results = await Axios.get("https://api.artic.edu/api/v1/artworks/search?limit=100$q="+keyword)
   // console.log(results);
   // console.log('id is',results.data.data[0].id);
   this.setState({artList: results.data.data});
@@ -40,9 +39,9 @@ class App extends Component {
 
             <Route exact path='/'
               render={() =>
-              <StartPage apiGetArt={this.apiGetArt} artList = {this.state.artList}/>}
-            />
-            <Route path='/results'
+              <StartPage apiGetArt={this.apiGetArt}/>}
+            /> 
+            <Route exact path='/results'
               render={() =>
               <ListResults results={this.state.artList} />}
             />
