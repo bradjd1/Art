@@ -2,13 +2,13 @@ import Axios from "axios";
 import React, { Component } from 'react';
 import { Route, Link, Switch, Redirect } from "react-router-dom";
 import './App.css';
-// import StartPage from '../StartPage/StartPage';
+import StartPage from '../StartPage/StartPage';
 import ListResults from "../ListResults/ListResults";
 import Details from "../Details/Details";
 
 class App extends Component {
-  constructor() {
-      super();
+  constructor(props) {
+      super(props);
       this.state = {
           id: '',
           imageId: '',
@@ -18,13 +18,13 @@ class App extends Component {
   }
 
   apiGetArt = async (keyword) => {
-  keyword = 'cats'
-  let results = await Axios.get("https://api.artic.edu/api/v1/artworks/search?limit=100&q="+keyword)
-  //let pageTwo = await Axios.get("https://api.artic.edu/api/v1/artworks/search?page=2&limit=100&q="+keyword)
+  let results = await Axios.get("https://api.artic.edu/api/v1/artworks/search?limit=100$q="+keyword)
   // console.log(results);
   // console.log('id is',results.data.data[0].id);
   this.setState({artList: results.data.data});
   console.log('artList: ', this.state.artList);
+  // this.props.history.push("/results"); 
+  
   }
 
   componentDidMount = () => {
@@ -34,12 +34,13 @@ class App extends Component {
 
   render() {
       return (
+
           <div className="App">
 
-            {/* <Route exact path='/'
+            <Route exact path='/'
               render={() =>
               <StartPage apiGetArt={this.apiGetArt}/>}
-            /> */}
+            /> 
             <Route exact path='/results'
               render={() =>
               <ListResults results={this.state.artList} />}
