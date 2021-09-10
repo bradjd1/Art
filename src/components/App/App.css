@@ -2,10 +2,12 @@
   text-align: center;
 }
 .nav {
-  background-color: bisque;
   text-align: center;
   height: 100px;
   vertical-align: middle;
   padding-top: 15px;
-  z-index: 10;
+  position: fixed;
+  width: 100%;
+  z-index: 10; 
+  background: bisque;
 }

@@ -1,15 +1,18 @@
 .ListResults {
     text-align: left;
-    margin-top: 15px;
-    margin-left: 25px;
+    /* margin-top: 15px;
+    margin-left: 25px; */
     position: relative;
 }
 .ListResults .nav {
 text-align: center;
-/* z-index: 100; */
+position: fixed;
+width: 100%;
+z-index: 10; 
+background: bisque;
 }
 .ListResults img {
-    opacity: .5;
+    opacity: .3;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -17,46 +20,47 @@ text-align: center;
     width: auto;
     position: fixed;
     /* width: 100%; */
+    z-index: -2;
+    margin-top: 30px;
 }
 .ListResults .background {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    opacity: .75;
     min-height: 100vh;
     width: 100%;
     position: fixed; 
+    /* overflow: hidden; */
 }
 
 .ListResults .text {
     margin-left: 30px;
     position: fixed;
     margin-top: 100px;
-    /* z-index: 10; */
+    z-index: 3;
+    /* background:red; */
 }
 
 .ListResults .background2{
     opacity: 1;
-    font-weight: bold;
     margin-left: 30px;
     position: absolute;
     top: 170px;
     height: 100%;
     width: 100%;
-    /* z-index: -1; */
+     z-index: 1;
 }
-.screen {
-    width: 100%;
-    position: relative;
-    /* z-index: 10; */
-}
-.ListResults .results {
-    /* z-index: 20; */
-    position: relative;
-}
+
 .ListResults .artTitles {
     /* z-index: 20; */
     position: relative;
+    /* overflow: auto; */
+    z-index: 1;
+    margin-left: 30px;
+    top: 200px;
+    height: 100%;
+    width: 100%;
+
 }
 .ListResults .container {
     width: 30px;
@@ -65,19 +69,6 @@ text-align: center;
     margin: 9px;
     display:inline-block
   }
-  
-  /* .Details .b-container {
-      margin: 10px;
-  }
-  
-  .Details .a-container {
-      margin: 10px;
-  }
-  
-  .Details .s-container {
-      margin: 10px;
-  } */
-  
   .ListResults .cube {
     position: relative;
     width: 30px;
