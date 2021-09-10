@@ -1,0 +1,16 @@
+.Details #art-desc {
+    width: 60%;
+    display: flex;
+    margin: auto;
+    font-style: italic;
+}
+
+.Details .image {
+    margin-top: 30px;
+}
+
+.Details .title {
+    font-weight: bold;
+    font-size: 120%;
+}
+
