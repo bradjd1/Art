@@ -2,9 +2,11 @@
     text-align: left;
     margin-top: 15px;
     margin-left: 25px;
+    position: relative;
 }
-.ListResultsNav {
+.ListResults .nav {
 text-align: center;
+/* z-index: 100; */
 }
 .ListResults img {
     opacity: .5;
@@ -13,10 +15,10 @@ text-align: center;
     background-attachment: fixed;
     min-height: 100vh;
     width: auto;
+    position: fixed;
     /* width: 100%; */
 }
 .ListResults .background {
-    /* background-image: url('../../ArtInstituteofChicago2.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -25,21 +27,100 @@ text-align: center;
     width: 100%;
     position: fixed; 
 }
+
+.ListResults .text {
+    margin-left: 30px;
+    position: fixed;
+    margin-top: 100px;
+    /* z-index: 10; */
+}
+
 .ListResults .background2{
     opacity: 1;
     font-weight: bold;
     margin-left: 30px;
     position: absolute;
-    top: 50px;
+    top: 170px;
     height: 100%;
     width: 100%;
-}
-.ListResults .background .instr {
-    opacity: 1;
-    font-weight: bold;
-    text-align: center;
+    /* z-index: -1; */
 }
 .screen {
     width: 100%;
     position: relative;
+    /* z-index: 10; */
 }
+.ListResults .results {
+    /* z-index: 20; */
+    position: relative;
+}
+.ListResults .artTitles {
+    /* z-index: 20; */
+    position: relative;
+}
+.ListResults .container {
+    width: 30px;
+    height: 30px;
+    perspective: 500px;
+    margin: 9px;
+    display:inline-block
+  }
+  
+  /* .Details .b-container {
+      margin: 10px;
+  }
+  
+  .Details .a-container {
+      margin: 10px;
+  }
+  
+  .Details .s-container {
+      margin: 10px;
+  } */
+  
+  .ListResults .cube {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    transform-style: preserve-3d;
+    transform: rotate3d(0.3, 0.5, 0, 60deg);
+  }
+  
+  .ListResults .face {
+    color: white;
+    width: 30px;
+    height: 30px;
+    background: red;
+    border: 2px solid black;
+    position: absolute;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: "Trade Winds", cursive;
+  }
+  
+  .ListResults .front {
+    transform: translateZ(15px);
+  }
+  
+  .ListResults .left {
+    transform: translateX(-15px) rotateY(-90deg);
+  }
+  
+  .ListResults .bottom {
+    transform: translateY(15px) rotateX(-90deg);
+  }
+  
+  .ListResults .b-box {
+      background: red;
+  }
+  
+  .ListResults .a-box {
+      background: blue;
+  }
+  
+  .ListResults .s-box {
+      background: green;
+  }
