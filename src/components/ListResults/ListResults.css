@@ -6,7 +6,7 @@
 }
 .ListResults .nav {
 text-align: center;
-z-index: 100;
+/* z-index: 100; */
 }
 .ListResults img {
     opacity: .5;
@@ -31,8 +31,8 @@ z-index: 100;
 .ListResults .text {
     margin-left: 30px;
     position: fixed;
-    margin-top: 40px;
-    z-index: 10;
+    margin-top: 100px;
+    /* z-index: 10; */
 }
 
 .ListResults .background2{
@@ -40,21 +40,87 @@ z-index: 100;
     font-weight: bold;
     margin-left: 30px;
     position: absolute;
-    top: 110px;
+    top: 170px;
     height: 100%;
     width: 100%;
-    z-index: -1;
+    /* z-index: -1; */
 }
 .screen {
     width: 100%;
     position: relative;
-    z-index: 10;
+    /* z-index: 10; */
 }
 .ListResults .results {
-    z-index: -1;
+    /* z-index: 20; */
     position: relative;
 }
 .ListResults .artTitles {
-    z-index: -10;
+    /* z-index: 20; */
     position: relative;
 }
+.ListResults .container {
+    width: 30px;
+    height: 30px;
+    perspective: 500px;
+    margin: 9px;
+    display:inline-block
+  }
+  
+  /* .Details .b-container {
+      margin: 10px;
+  }
+  
+  .Details .a-container {
+      margin: 10px;
+  }
+  
+  .Details .s-container {
+      margin: 10px;
+  } */
+  
+  .ListResults .cube {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    transform-style: preserve-3d;
+    transform: rotate3d(0.3, 0.5, 0, 60deg);
+  }
+  
+  .ListResults .face {
+    color: white;
+    width: 30px;
+    height: 30px;
+    background: red;
+    border: 2px solid black;
+    position: absolute;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: "Trade Winds", cursive;
+  }
+  
+  .ListResults .front {
+    transform: translateZ(15px);
+  }
+  
+  .ListResults .left {
+    transform: translateX(-15px) rotateY(-90deg);
+  }
+  
+  .ListResults .bottom {
+    transform: translateY(15px) rotateX(-90deg);
+  }
+  
+  .ListResults .b-box {
+      background: red;
+  }
+  
+  .ListResults .a-box {
+      background: blue;
+  }
+  
+  .ListResults .s-box {
+      background: green;
+  }
