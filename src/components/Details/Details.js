@@ -56,13 +56,29 @@ class Details extends Component {
                     </p>
 
                 </div> */}
-                <div className="container">
-                    <div className="cube">
-                        <div className="face bottom">B</div>
-                        <div className="face left">B</div>
-                        <div className="face front">B</div>
+                <span>
+                    <div className="container b-container">
+                        <div className="cube">
+                            <div className="face bottom b-box">B</div>
+                            <div className="face left b-box">B</div>
+                            <div className="face front b-box">B</div>
+                        </div>
                     </div>
-                </div>
+                    <div className="container a-container">
+                        <div className="cube">
+                            <div className="face bottom a-box">A</div>
+                            <div className="face left a-box">A</div>
+                            <div className="face front a-box">A</div>
+                        </div>
+                    </div>
+                    <div className="container s-container">
+                        <div className="cube">
+                            <div className="face bottom s-box">S</div>
+                            <div className="face left s-box">S</div>
+                            <div className="face front s-box">S</div>
+                        </div>
+                    </div>
+                </span>
                 <div className="details">
                     <p><span className='title'>{this.state.details.title}</span> by {this.state.details.artist_title}</p>
                     <p>Created in {this.state.details.date_end} in {this.state.details.place_of_origin}</p>
