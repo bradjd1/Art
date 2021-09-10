@@ -17,7 +17,6 @@ class Details extends Component {
     componentDidMount = () => {
         console.log('this.props: ',this.props.match.params.id)
         this.apiGetDetails();
-       
     }
 
     apiGetDetails = async () => {
@@ -39,19 +38,16 @@ class Details extends Component {
         this.setState({imageResults: imageResults.config.url})
     }
 
-        
     render() {
         return (
             <div className="Details">
                 <div className="nav">
                     
-                    <Link to='/'>
-                        Home
-                    </Link>{'\u00A0'}{'\u00A0'}{'\u00A0'}{'\u00A0'}{'\u00A0'}
+                    <Link to='/'>Home</Link>{'\u00A0'}{'\u00A0'}{'\u00A0'}{'\u00A0'}{'\u00A0'}
                     <Link to='/results'>Back to Results</Link>
                 </div>
                 <div className="details">
-                    <p>Title: {this.state.details.title} by {this.state.details.artist_title}</p>
+                    <p><span className='title'>{this.state.details.title}</span> by {this.state.details.artist_title}</p>
                     <p>Created in {this.state.details.date_end} in {this.state.details.place_of_origin}</p>
                     <p>Classification: {this.state.details.classification_title}</p>
                     <p id='art-desc'>{this.state.thumbnail.alt_text}</p>
