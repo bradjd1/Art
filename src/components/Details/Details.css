@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap");
+
+.Details #art-desc {
+  width: 60%;
+  display: flex;
+  margin: auto;
+  font-style: italic;
+}
+
+.Details .image {
+  margin-top: 30px;
+}
+
+.Details .title {
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.Details .name {
+  color: black;
+}
+
+.Details .container {
+  width: 30px;
+  height: 30px;
+  perspective: 500px;
+  margin: 9px;
+  display:inline-block
+}
+
+/* .Details .b-container {
+    margin: 10px;
+}
+
+.Details .a-container {
+    margin: 10px;
+}
+
+.Details .s-container {
+    margin: 10px;
+} */
+
+.Details .cube {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  transform-style: preserve-3d;
+  transform: rotate3d(0.3, 0.5, 0, 60deg);
+}
+
+.Details .face {
+  color: white;
+  width: 30px;
+  height: 30px;
+  background: red;
+  border: 2px solid black;
+  position: absolute;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-family: "Trade Winds", cursive;
+}
+
+.Details .front {
+  transform: translateZ(15px);
+}
+
+.Details .left {
+  transform: translateX(-15px) rotateY(-90deg);
+}
+
+.Details .bottom {
+  transform: translateY(15px) rotateX(-90deg);
+}
+
+.Details .b-box {
+    background: red;
+}
+
+.Details .a-box {
+    background: blue;
+}
+
+.Details .s-box {
+    background: green;
+}
+
+/* .Details .appName {
+    color: white;
+    font-size: 150%;
+  }
+  
+  .Details .b {
+    background-color: red;
+    padding: 3px 10px 3px 10px;
+    margin: 2px;
+    box-shadow: 5px 5px gray;
+  }
+  
+  .Details .a {
+    background-color: blue;
+    padding: 3px 10px 3px 10px;
+    margin: 2px;
+  }
+  
+  .Details .s {
+    background-color: green;
+    padding: 3px 10px 3px 10px;
+    margin: 2px;
+  } */
