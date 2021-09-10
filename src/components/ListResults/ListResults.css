@@ -6,19 +6,32 @@
 .ListResultsNav {
 text-align: center;
 }
+.ListResults img {
+    opacity: .5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+}
 .ListResults .background {
-    background-image: url('../../ArtInstituteofChicago2.jpg');
+    /* background-image: url('../../ArtInstituteofChicago2.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     opacity: .75;
-    min-height: 100%;
-    /* position: relative; */
+    min-height: 100vh;
+    width: 100%;
+    position: fixed; 
 }
 .ListResults .background2{
     opacity: 1;
     font-weight: bold;
     margin-left: 30px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
 }
 /* .ListResults .background2 h2{
     opacity: 1;
@@ -35,4 +48,7 @@ text-align: center;
     font-weight: bold;
     text-align: center;
 }
-
+.screen {
+    width: 100%;
+    position: relative;
+}

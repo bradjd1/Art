@@ -28,14 +28,17 @@ class ListResults extends Component {
                     <Link to='/'>Home</Link>
 
                 </nav>
-                <div className='background'>
-                    <br></br>
+                <div className='screen'>
+                    <div className='background'>
+                    <img src='../ArtInstituteofChicago2.jpg' alt='art pic'/>
+                    </div>
                     <div className='background2'>
                         <p className='instr'>Click on a title below to get details about the art piece and see a picture of it.</p>
                         <h2>Art Title:</h2>
                         <div className='results'></div>
                         <div>{artList}</div>
                     </div>
+
                 </div>
             </div>
         );
