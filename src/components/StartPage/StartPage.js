@@ -20,7 +20,7 @@ class StartPage extends Component {
         if (this.state.keyword == null) {
         
             return (
-                <div class="apiGetArt">
+                <div className="StartPage">
                     <header class="Header"></header>
                     <h1>Wecome to the BAS art search app</h1>
                     <h2>Enter your Key Word below</h2>
