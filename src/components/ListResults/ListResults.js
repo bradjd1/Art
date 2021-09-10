@@ -24,12 +24,10 @@ class ListResults extends Component {
         console.log('in results', this.props)
         return (
             <div className="ListResults">
-
                 <div className='screen'>
                     <div className='background'>
                         <nav className='nav'>
                             <Link to='/'>Home</Link>
-
                         </nav>
                         <img src='../ArtInstituteofChicago2.jpg' alt='art pic' />
                     </div>
@@ -39,7 +37,7 @@ class ListResults extends Component {
                     </div>
                     <div className='background2'>
                         <div className='results'></div>
-                        <div>{artList}</div>
+                        <div className='artTitles'>{artList}</div>
                     </div>
 
                 </div>
