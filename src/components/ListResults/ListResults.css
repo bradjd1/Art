@@ -12,7 +12,8 @@ text-align: center;
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
-    width: 100%;
+    width: auto;
+    /* width: 100%; */
 }
 .ListResults .background {
     /* background-image: url('../../ArtInstituteofChicago2.jpg'); */
@@ -29,20 +30,10 @@ text-align: center;
     font-weight: bold;
     margin-left: 30px;
     position: absolute;
-    top: 0;
+    top: 50px;
     height: 100%;
     width: 100%;
 }
-/* .ListResults .background2 h2{
-    opacity: 1;
-    font-weight: bold;
-    margin-left: 40px;
-}
-.ListResults .background div {
-    opacity: 1;
-    font-weight: bold;
-    margin-left: 20px;
-} */
 .ListResults .background .instr {
     opacity: 1;
     font-weight: bold;

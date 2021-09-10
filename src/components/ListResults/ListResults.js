@@ -24,12 +24,13 @@ class ListResults extends Component {
         console.log('in results', this.props)
         return (
             <div className="ListResults">
-                <nav className='nav'>
+
+                <div className='screen'>
+                    <div className='background'>
+                                        <nav className='nav'>
                     <Link to='/'>Home</Link>
 
                 </nav>
-                <div className='screen'>
-                    <div className='background'>
                     <img src='../ArtInstituteofChicago2.jpg' alt='art pic'/>
                     </div>
                     <div className='background2'>
