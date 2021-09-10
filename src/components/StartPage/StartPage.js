@@ -20,11 +20,14 @@ class StartPage extends Component {
         if (this.state.keyword == null) {
         
             return (
-                <div className="StartPage">
-                    <header class="Header"></header>
-                    <h1>Wecome to the BAS art search app</h1>
-                    <h2>Enter your Key Word below</h2>
+                <div className="apiGetArt">
+                    <header className="Header"></header>
+                    <div className="Text">
 
+                    
+                    <h1>Welcome to the BAS art search app</h1>
+                    <h2>Enter your Key Word below</h2>
+                    </div>
 
                     <form onSubmit={(event) => {
                         
