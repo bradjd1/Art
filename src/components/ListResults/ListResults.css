@@ -5,6 +5,7 @@
 }
 .ListResultsNav {
 text-align: center;
+z-index: 100;
 }
 .ListResults img {
     opacity: .5;
