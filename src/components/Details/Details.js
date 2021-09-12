@@ -31,7 +31,6 @@ class Details extends Component {
 
     apiGetImage = async () => {
         let imageResults = await Axios.get("https://www.artic.edu/iiif/2/" + this.state.imageID + "/full/600,/0/default.jpg");
-        console.log('imageResults: ', imageResults.config.url)
         this.setState({ imageResults: imageResults.config.url })
     }
 
