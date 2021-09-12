@@ -5,11 +5,6 @@ import { Link, } from "react-router-dom";
 class ListResults extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            id: '',
-            imageId: '',
-            keyword: ''
-        }
     }
     render() {
         let artList = this.props.results.map((value, index) => {
@@ -61,7 +56,7 @@ class ListResults extends Component {
                     <h3>Art Title:</h3>
                 </div>
                 <div className='background2'>
-                    <div className='results'></div>
+                    {/* <div className='results'></div> */}
                     <div className='artTitles'>{artList}</div>
                 </div>
             </div>
