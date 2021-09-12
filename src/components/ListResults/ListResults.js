@@ -54,7 +54,10 @@ class ListResults extends Component {
                         <br></br><br></br>
                         <Link to='/'>Home</Link>
                     </nav>
-                    <p className='instr'>Click on a title below to get details about the art piece and see a picture of it.</p>
+                    <span>
+                    <div className='instr'>Keyword search: {this.props.keyword}</div>
+                    <div className='instr'>Click on a title below to get details about the art piece and see a picture of it.</div>
+                    </span>
                     <h3>Art Title:</h3>
                 </div>
                 <div className='background2'>
