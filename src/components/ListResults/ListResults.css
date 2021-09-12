@@ -4,12 +4,14 @@
     margin-left: 25px; */
     position: relative;
 }
-.ListResults .nav {
+.ListResults .nav3 {
 text-align: center;
 position: fixed;
 width: 100%;
 z-index: 10; 
+height: 150px;
 background: bisque;
+
 }
 .ListResults img {
     opacity: .3;
@@ -34,18 +36,27 @@ background: bisque;
 }
 
 .ListResults .text {
-    margin-left: 30px;
+    /* margin-left: 30px; */
     position: fixed;
-    margin-top: 100px;
+    margin-top: 0;
     z-index: 3;
-    /* background:red; */
+    background:bisque;
+    height: 185px;
+    width: 100%;
 }
-
+.ListResults .instr{
+    text-align: center;
+    margin-top: 5px;
+}
+.ListResults h3 {
+    margin-left: 60px;
+    margin-top: 0;
+}
 .ListResults .background2{
     opacity: 1;
     margin-left: 30px;
     position: absolute;
-    top: 170px;
+    /* top: 120px; */
     height: 100%;
     width: 100%;
      z-index: 1;
@@ -57,7 +68,7 @@ background: bisque;
     /* overflow: auto; */
     z-index: 1;
     margin-left: 30px;
-    top: 200px;
+    top: 180px;
     height: 100%;
     width: 100%;
 

@@ -26,6 +26,9 @@ class ListResults extends Component {
             <div className="ListResults">
                 {/* <div className='screen'> */}
                     <div className='background'>
+                        <img src='../ArtInstituteofChicago2.jpg' alt='art pic' />
+                    </div>
+                    <div className='text'>
                         <nav className='nav'>
                             <span>
                                 <div className="container b-container">
@@ -53,22 +56,17 @@ class ListResults extends Component {
                             <br></br><br></br>
                             <Link to='/'>Home</Link>
                         </nav>
-                        <img src='../ArtInstituteofChicago2.jpg' alt='art pic' />
-                    </div>
-                    <div className='text'>
                         <p className='instr'>Click on a title below to get details about the art piece and see a picture of it.</p>
                         <h3>Art Title:</h3>
                     </div>
-                    {/* <div className='background2'> */}
-                        {/* <div className='results'></div> */}
+                    <div className='background2'>
+                        <div className='results'></div>
                         <div className='artTitles'>{artList}</div>
-                    {/* </div> */}
-
+                    </div>
                 {/* </div> */}
             </div>
         );
     }
 }
-
 
 export default ListResults;

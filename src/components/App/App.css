@@ -6,8 +6,7 @@
   height: 100px;
   vertical-align: middle;
   padding-top: 15px;
-  position: fixed;
-  width: 100%;
   z-index: 10; 
+  top: 0;
   background: bisque;
 }
