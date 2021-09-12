@@ -4,15 +4,6 @@
     margin-left: 25px; */
     position: relative;
 }
-.ListResults .nav3 {
-text-align: center;
-position: fixed;
-width: 100%;
-z-index: 10; 
-height: 150px;
-background: bisque;
-
-}
 .ListResults img {
     opacity: .3;
     background-repeat: no-repeat;
