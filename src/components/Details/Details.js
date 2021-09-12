@@ -23,11 +23,8 @@ class Details extends Component {
         const id = this.props.match.params.id
         const fields = '?fields=artist_title,title,thumbnail,place_of_origin,date_end,classification_title,image_id,id'
         let detailResults = await Axios.get("https://api.artic.edu/api/v1/artworks/" + id + fields)
-        // console.log('detailResults: ', detailResults);
         this.setState({ details: detailResults.data.data });
-        // console.log('details', this.state.details);
         this.setState({ thumbnail: detailResults.data.data.thumbnail });
-        // console.log('thumbnail', this.state.thumbnail)
         this.setState({ imageID: detailResults.data.data.image_id })
         this.apiGetImage();
     }
