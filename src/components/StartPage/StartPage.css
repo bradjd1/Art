@@ -1,35 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Simonetta:ital,wght@1,900&display=swap");
 
 h2  {
-    color:red;
+    color: black;
     font-family: Simonetta;
     font-weight: bolder;
     font-size: .3in;
-    opacity: 1.0;
-    background-color:whitesmoke;
-    background: 50 px;
-}
+
+   
+} 
 h1 {
-    color:black ;
+    color: black;
     font-family: Simonetta;
-    font-size: .7in;
+    font-weight: bolder;
+    font-size: 50px
+
 }
 
-.Text {
-    opacity: 1.0;
-}
+
 
 .apiGetArt {
-    background-image: url(/src/Art_Institute_of_Chicago_Lion_Statue.jpeg);
+    background-image: url(/src/Lion4.jpg);
     height: 900px;
-    background-size: 70%;
+    background-size: 100%;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode:luminosity;
-    opacity: .50;
+    background-repeat: no-repeat;    
     
+
+
+} 
+.submit {
+    color:red
 }
+
+
 .apiGetArt .container {
     width: 100px;
     height: 100px;
