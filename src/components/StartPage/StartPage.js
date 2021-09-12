@@ -20,11 +20,36 @@ class StartPage extends Component {
         if (this.state.keyword == null) {
         
             return (
-                <div class="apiGetArt">
-                    <header class="Header"></header>
-                    <h1>Wecome to the BAS art search app</h1>
+                <div className="apiGetArt">
+                    <header className="Header"></header>
+                    <div className="Text">
+                    <span>
+                        <div className="container b-container">
+                            <div className="cube">
+                                <div className="face bottom b-box">B</div>
+                                <div className="face left b-box">B</div>
+                                <div className="face front b-box">B</div>
+                            </div>
+                        </div>
+                        <div className="container a-container">
+                            <div className="cube">
+                                <div className="face bottom a-box">A</div>
+                                <div className="face left a-box">A</div>
+                                <div className="face front a-box">A</div>
+                            </div>
+                        </div>
+                        <div className="container s-container">
+                            <div className="cube">
+                                <div className="face bottom s-box">S</div>
+                                <div className="face left s-box">S</div>
+                                <div className="face front s-box">S</div>
+                            </div>
+                        </div>
+                    </span><br></br><br></br>
+                    
+                    <h1>Welcome to the BAS art search app</h1>
                     <h2>Enter your Key Word below</h2>
-
+                    </div>
 
                     <form onSubmit={(event) => {
                         
