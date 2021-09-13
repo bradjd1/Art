@@ -64,7 +64,7 @@ class Details extends Component {
                     <Link to='/'>Home</Link>{'\u00A0'}{'\u00A0'}{'\u00A0'}{'\u00A0'}{'\u00A0'}
                     <Link to='/results'>Back to Results</Link>
                 </div>
-                
+
                 <div className="details">
                     <p><span className='title'>{this.state.details.title}</span> by {this.state.details.artist_title}</p>
                     <p>Created in {this.state.details.date_end} in {this.state.details.place_of_origin}</p>

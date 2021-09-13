@@ -1,11 +1,8 @@
 import './ListResults.css';
-import React, { Component, useDebugValue } from 'react';
+import React, { Component } from 'react';
 import { Link, } from "react-router-dom";
 
 class ListResults extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         let artList = this.props.results.map((value, index) => {
             return (
@@ -50,13 +47,12 @@ class ListResults extends Component {
                         <Link to='/'>Home</Link>
                     </nav>
                     <span>
-                    <div className='instr'>Keyword search: {this.props.keyword}</div>
-                    <div className='instr'>Click on a title below to get details about the art piece and see a picture of it.</div>
+                        <div className='instr'>Keyword search: {this.props.keyword}</div>
+                        <div className='instr'>Click on a title below to get details about the art piece and see a picture of it.</div>
                     </span>
                     <h3>Art Title:</h3>
                 </div>
                 <div className='background2'>
-                    {/* <div className='results'></div> */}
                     <div className='artTitles'>{artList}</div>
                 </div>
             </div>
