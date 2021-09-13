@@ -1,6 +1,6 @@
 import Axios from "axios";
 import React, { Component } from 'react';
-import { Route, Link, Switch, Redirect } from "react-router-dom";
+import { Route } from "react-router-dom";
 import './App.css';
 import StartPage from '../StartPage/StartPage';
 import ListResults from "../ListResults/ListResults";
@@ -18,7 +18,6 @@ class App extends Component {
   }
 
   apiGetArt = async (keyword) => {
-    console.log(keyword)
   let results = await Axios.get("https://api.artic.edu/api/v1/artworks/search?limit=100&q="+keyword)
   this.setState({artList: results.data.data});
   this.setState({keyword: keyword})  
@@ -26,14 +25,11 @@ class App extends Component {
 
   componentDidMount = () => {
     this.apiGetArt()
-
   }
 
   render() {
       return (
-
           <div className="App">
-
             <Route exact path='/'
               render={() =>
               <StartPage apiGetArt={this.apiGetArt}/>}

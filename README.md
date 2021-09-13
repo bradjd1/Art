@@ -2,7 +2,7 @@
 
 ## DESCRIPTION
 
-An application that allows a user to find and view art at the Art Institute of Chicago. The user can enter a keyword to receive a list of artworks. The user can then click on an item to see additional details.
+An application that allows a user to find and view art at the Art Institute of Chicago. The user can enter an optional keyword to receive a list of artworks. The user can then click on an item to see additional details.
 
 ## PROJECT LINKS
 
@@ -17,8 +17,9 @@ An application that allows a user to find and view art at the Art Institute of C
 
 - As an art enthusiast, I want to be able to search for art at the Art Institute of Chicago by a keyword or keywords.
 - As a user of this app, I want to see details about a piece of art from the Search Results.
+- As a user of this app, I want to see my search criteria when I'm looking at Search Results.
 - As an art enthusiast, I want to view an image of the artwork.
-- As a user of this app, I want to return to my Search Results.
+- As a user of this app, I want to return to my Search Results after viewing Details.
 
 ## TECHNOLOGIES USED
 
@@ -28,6 +29,7 @@ An application that allows a user to find and view art at the Art Institute of C
   - Axios
 - Writing Code: Visual Studio Code
 - Debug Code: npm start & FireFox Developer Tools
+- Canva: edit image used on Start Page 
 - Version Control: GitHub
 - Deployment: Heroku
 
@@ -39,25 +41,21 @@ An application that allows a user to find and view art at the Art Institute of C
 ## BASIC CODE FLOW
 * User enters search keyword (or blank) on the Start Page.
 * The AIoC API runs using those search parameters and renders the results to the ListResults page/component.
+    - The Search Results are those of the return of the API call, which uses their own internal search logic (including a limit of 100 search results).
 * User clicks on a result to see details about that piece of art.  
     - The app captures the ID of the search result that was clicked and builds the URL for the next API call.
-    - The AIoC API runs again, using the Details endpoint, and renders the results to the Details page/component.
+    - The AIoC API is called again, using the Details endpoint, and renders the results to the Details page/component.
     - The app gets the Image ID from the second AIoC API call to build the URL for the IIIF API call.
-    - The IIIF API runs and renders the image to the Details page/component.
+    - The IIIF API is called and renders the image to the Details page/component.
 
 ## NEXT STEPS / FUTURE FEATURES
 
 ### Low-Hanging Fruit
-
--
-
-### Should-do
-
--
+- Addtional details: art is included in the Museum's Art Tour, on-loan, etc.
 
 ### Additional Features
-
--
+- Thumbnails for each of the Search Results
+- Return next 100 pieces of art in the Search Results (put pageNumber in State of ListResults and issue another API call)
 
 ## CODE SNIPPETS
 
@@ -75,7 +73,12 @@ apiGetImage = async () => {
 ```
 
 ## REMAINING ISSUES / BUGS
+- None
 
 ## LESSONS-LEARNED
+- It's important to understand how your API works and what kind of data it returns:
+    * Search Results were not full details
+    * Search Results limited to 100 records
+    * Thumbnail images were not worth using
+- Working with images as backgrounds is not as easy as it would seem (CSS can quickly become an issue)
 
--

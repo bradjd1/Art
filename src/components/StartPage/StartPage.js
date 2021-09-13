@@ -1,6 +1,4 @@
-import Axios from "axios";
-import { render } from '@testing-library/react';
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import './StartPage.css';
 import ReactDOM from 'react';
 import { Link, Redirect } from 'react-router-dom'
